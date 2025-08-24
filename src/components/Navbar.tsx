@@ -18,7 +18,7 @@ const Navbar = () => {
     <header className="relative bg-gray-800 text-white px-4 py-3">
       <nav className="flex justify-between items-center max-w-4xl mx-auto">
         <Link to="/characters" className="text-lg font-semibold">
-          <img src={RickAndMortyIcon} alt="Rick and Morty Icon" />
+          <img src={RickAndMortyIcon} alt="rick-and-morty-icon" />
         </Link>
         {user && (
           <button
