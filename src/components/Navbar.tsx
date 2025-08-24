@@ -2,6 +2,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { auth } from "../auth/firebase";
 import { useAuth } from "../context/AuthContext";
+import RickAndMortyIcon from "../assets/nav-icon.svg";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ const Navbar = () => {
     <header className="relative bg-gray-800 text-white px-4 py-3">
       <nav className="flex justify-between items-center max-w-4xl mx-auto">
         <Link to="/characters" className="text-lg font-semibold">
-          <img src="\src\assets\Rick_and_Morty.svg" alt="rick&mort-icon" />
+          <img src={RickAndMortyIcon} alt="Rick and Morty Icon" />
         </Link>
         {user && (
           <button
